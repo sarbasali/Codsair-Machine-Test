@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+
+<!-- google fonts link -->
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Poppins:wght@700&display=swap" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+
 <body class="bg-orange-200 w-screen h-auto overflow-x-hidden">
-<div class=".container flex flex-col gap-14">
+<div class=".container flex flex-col gap-12 md:mt-[-80px] sm:mt-[-80px] lg:mt-5 mt-[-80px]">
 
   <section class=" pt-10 mx-14">
 
-    <nav class=" flex flex-row items-center justify-between">
+    <!-- <nav class=" flex flex-row items-center justify-between">
      <div id="name" class=" gap-2 flex flex-row  items-center">
       <img class="w-24" src="../../../assets/burger-removebg-preview.png" alt="">
       <i class=" font-extrabold">E</i>
@@ -41,12 +45,12 @@
       </span>
       </button>
      </div>
-    </nav>
+    </nav> -->
 
   </section>
 
   <section  >
-    <div id="section2" class="mt-32 flex flex-row  gap-24 section2">
+    <div id="section2" class="mt-5 flex flex-row  gap-24 section2">
 
     <div id="" class="flex flex-col pl-24 ">
         <div id="section2-1" class="flex flex-row gap-6  ">
@@ -61,14 +65,14 @@
         <div id="sctn2-videoplay" class="pt-14 flex gap-16">
             <button id="sctn2-order" class="w-[200px] h-[80px] bg-black text-white rounded-full text-2xl font-bold">order now</button>
             <ul id="video-ul"  class="flex items-center gap-5">
-                <button id="sctn2-play" class=" w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center animate-bounce hover:animate-none "><svg id="play-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 ">
+                <button id="sctn2-play" class=" w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center animate-bounce sm:animate-none hover:animate-none "><svg id="play-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 ">
                     <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
                   </svg>           
                   </button>
                   <p id="sctn2-watch" class="text-3xl font-bold text-slate-700">watch video</p>
             </ul>
         </div>
-        <div id="sctn2-menu" class="mt-20 flex flex-row  gap-10">
+        <div id="sctn2-menu" class="mt-20 flex flex-row  gap-10 lg:h-[250px] md:h-[200px] sm:h-[140px] h-[60px]">
             <div id="sctn2-menu-ls" class="  w-[130px] h-[130px]  bg-white rounded-full flex flex-col  items-center pt-4 gap-7 " >
                 <div id="sctn2-menu-border" class="w-[100px] h-[100px] bg-orange-300 rounded-full  ">
                 <img id="sctn2-menu-img" class="w-32 " src="../../../assets/burger-removebg-preview.png" alt="">
@@ -288,7 +292,7 @@
   <section>
     <div class="flex flex-col items-center ">
       <p id="sctn4-ourCustomer" class="text-7xl">Our Customer's Says</p>
-     <div id="review-main" class="grid grid-cols-3 gap-24 ">
+     <div id="review-main" class="lg:flex lg:flex-row gap-24 hidden sm:hidden lg:block md:hidden ">
 
       <div id="sctn4-customers-review" class="flex flex-col w-[450px] h-[500px] bg-white items-center justify-between mt-24 ">
         <div class="pt-5">
@@ -341,6 +345,111 @@
     </div>
 
     </div>
+
+    <!-- carousel -->
+    <div class="min-h-screen p-3 relative lg:hidden">
+      <div class="w-96  mx-auto" style="scroll-snap-type: x mandatory;">
+         <!-- first -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+            <!-- content #1 -->
+            <div class="w-96 h-[500px] flex flex-col justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <div class="py-4 px-8">
+                  
+                  <p class="hover:cursor-pointer py-3 text-black text-2xl leading-10">Lorem ipsum dolor, sit amet
+                     consectetur adipisicing elit.
+                  </p>
+               </div>
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-3" class="inline-block text-red-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-2" class="inline-block text-red-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+               <div class="h-32 w-96 bg-indigo-300 rounded-b-md flex flex-row gap-6 justify-center items-center">
+                <img class="w-24 h-24 " src="../../../assets/profile.png" alt="">
+                <div>
+                  <p class="text-2xl font-semibold">John Deol</p>
+                </div>
+               </div>
+            </div>
+         </div>
+         <!-- second -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+            <!-- content #2 -->
+            <div class="w-96 h-[500px] flex flex-col justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <div class="py-4 px-8">
+                  
+                  <p class="hover:cursor-pointer py-3 text-black text-2xl leading-10">Egestas diam in arcu cursus euismod
+                     quis. Fusce id velit ut tortor. Congue quisque egestas diam in arcu cursus euismod quis.
+                  </p>
+               </div>
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-1" class="inline-block text-blue-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-3" class="inline-block text-blue-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+               <div class="h-32 w-96 bg-indigo-300 rounded-b-md flex flex-row gap-6 justify-center items-center">
+                <img class="w-24 h-24 " src="../../../assets/profile.png" alt="">
+                <div>
+                  <p class="text-2xl font-semibold">John Deol</p>
+                </div>
+               </div>
+            </div>
+         </div>
+         <!-- three -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+            <!-- content #3 -->
+            <div  class="w-96 h-[500px] flex flex-col justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <div class="py-4 px-8">
+                 
+                  <p class="hover:cursor-pointer py-3 text-black text-2xl font-h leading-10 ">Aliquam ultrices sagittis orci a
+                     scelerisque purus semper. Quisque id diam vel quam elementum pulvinar. Facilisis magna etiam
+                     tempor orci eu lobortis elementum.
+                  </p>
+               </div>
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-2" class="inline-block text-yellow-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-1" class="inline-block text-yellow-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+               <div class="h-32 w-96 bg-indigo-300 rounded-b-md flex flex-row gap-6 justify-center items-center">
+                <img class="w-24 h-24 " src="../../../assets/profile.png" alt="">
+                <div>
+                  <p class="text-2xl font-semibold">John Deol</p>
+                </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+  
+ 
   </section>
 
   <section class="mt-12">
@@ -348,7 +457,7 @@
      
       <div class="flex justify-center flex-col items-center gap-10">
         <p class="sctn5-getinTouch text-6xl font-semibold">Get in Touch with Us</p>
-        <p class=" text-3xl w-[1000px] text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <p class=" text-2xl w-[1000px] text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident</p>
       </div>
     </div>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body>
+    <div class="flex flex-row justify-center items-center bg-orange-200">
+	 <nav class="lg:px-16 px-6    flex flex-wrap flex-row items-center w-screen  lg:py-0 py-2 pt-8">
+    <div class="flex-1 flex  justify-between items-center">
+      <a href="/" class="flex text-lg font-semibold  items-">
+        <img class="w-24 h-24" src="../../../assets/burger-removebg-preview.png" alt="">
+        <div class="mt-5 text-black text-5xl  ed">E & D</div>
+      </a>
+    </div>
+    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+      <svg
+        class="fill-current text-orange-400"
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        viewBox="0 0 20 20"
+      >
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full pl-7" id="menu">
+      <nav>
+        <ul class="text-xl text-start items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
+          <li class="py-2 lg:py-0 ">
+            <a
+              class="text-black hover:pb-4 hover:text-orange-400"
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+          <li class="py-2 lg:py-0 ">
+            <a
+              class="text-black hover:pb-4 hover:text-orange-400"
+              href="#"
+            >
+              Menu
+            </a>
+          </li>
+          <li class="py-2 lg:py-0 ">
+            <a
+              class="text-black hover:pb-4 hover:text-orange-400"
+              href="#"
+            >
+              About
+            </a>
+          </li>
+          <li class="py-2 lg:py-0 ">
+            <a
+              class="text-black hover:pb-4 hover:text-orange-400"
+              href="#"
+            >
+              Contact
+            </a>
+          </li>
+          
+         <div class="flex flex-row gap-6 items-center">
+            <button class="w-[70px] h-10 rounded-md bg-orange-300  text-xl">Login </button>
+            <button class="w-[90px] h-10 rounded-md bg-orange-300  text-xl ">Register</button>
+            <p id="" class="text-2xl text-gray-600 sm:hidden hidden md:hidden lg:block ">|</p>
+          
+         </div>
+        
+        </ul>
+      </nav>
+     
+    </div>
+   
+  </nav>
+ 
+  <button class="flex pr-10 pt-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+  </svg>
+  <span class="relative flex h-4 w-4 ">
+    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+  </span>
+</button>
+</div>
+  </body>
+</html>

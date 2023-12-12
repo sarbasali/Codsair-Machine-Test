@@ -164,6 +164,7 @@
     }
     .sctn3-menu{
         gap: 20px;
+        scrollbar-width: none;
 }
 #menu-dishes{
     width: 350px;
@@ -374,6 +375,7 @@
        .sctn3-menu{
          grid-template-columns: repeat(6, 1fr); 
          overflow-x:scroll;
+         scrollbar-width: none;
          width: 1100px;
          margin-left: 30px;
          margin-right: 30px;
@@ -413,7 +415,8 @@
       }
       #review-main{
         grid-template-columns: repeat(2, 1fr); 
-        
+        scrollbar-width: none;
+        place-items: center;
       }
 }
 @media (max-width:1150px){
@@ -424,6 +427,8 @@
     .sctn3-menu{
         grid-template-columns: repeat(6, 1fr); 
         overflow-x:scroll;
+        // scrollbar-width: none;
+        place-items: center;
         width: 1130px;
         margin-left: 60px;
        //  margin-right: 30px;
@@ -465,6 +470,7 @@
     .sctn3-menu{
         grid-template-columns: repeat(6, 1fr); 
         overflow-x:scroll;
+        place-items: center;
         width: 1000px;
         margin-left: 60px;
         margin-right: 30px;
@@ -601,7 +607,19 @@
         justify-content: center;
         justify-items: center;
     }
-}
+  
+        #sctn4-customers-review:hover {
+          width: auto;
+          height: auto;
+          box-shadow: none; 
+        }
+      
+        
+      }
+    
+      
+      
+
 @media (max-width:974px){
     #menu-dishes{
         width: 300px;
@@ -631,6 +649,7 @@
     .sctn3-menu{
         grid-template-columns: repeat(6, 1fr); 
         overflow-x:scroll;
+        
         width: 900px;
         margin-left: 30px;
         margin-right: 30px;
@@ -672,6 +691,7 @@
     .sctn3-menu{
         grid-template-columns: repeat(6, 1fr); 
         overflow-x:scroll;
+        scrollbar-width: none;
         width: 850px;
         margin-left: 30px;
         margin-right: 30px;
@@ -683,20 +703,20 @@
         justify-content: center;
         justify-items: center;
     }
-    #sctn4-customers-review:hover{
-        width: 380px;
-        height: 530px;
-        // box-shadow: rgb(205, 199, 199);
-        box-shadow: 0 1px 50px rgb(137, 135, 135);
+    // #sctn4-customers-review:hover{
+    //     width: 380px;
+    //     height: 530px;
+    //     // box-shadow: rgb(205, 199, 199);
+    //     box-shadow: 0 1px 50px rgb(137, 135, 135);
        
-        #sctn4-review{
-            font-size: 22px;
-            line-height: 60px; 
-        }
-        #sctn4-profile{
-            width: 380px;
-        }
-       }
+    //     #sctn4-review{
+    //         font-size: 22px;
+    //         line-height: 60px; 
+    //     }
+    //     #sctn4-profile{
+    //         width: 380px;
+    //     }
+    //    }
 }
 @media (max-width:900px){
     .container{
@@ -846,14 +866,14 @@
         justify-items: center;
     }
    
-       #review-main{
-        width: 700px;
-        overflow-x: scroll;
-        grid-template-columns: repeat(3, 1fr); 
-        margin-left: 50px;
-        margin-right: 50px;
+    //    #review-main{
+    //     width: 700px;
+    //     overflow-x: scroll;
+    //     grid-template-columns: repeat(3, 1fr); 
+    //     margin-left: 50px;
+    //     margin-right: 50px;
 
-       }
+    //    }
 }
 @media (max-width:768px){
     .container{
