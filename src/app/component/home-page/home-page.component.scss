@@ -1310,6 +1310,7 @@
     #header_btn2  {
         display: none;
     }
+   
     .sctn3-menu{
         grid-template-columns: repeat(6, 1fr); 
         overflow-x:scroll;
@@ -1323,6 +1324,12 @@
         // padding-top: 0px;
         justify-content: center;
         justify-items: center;
+    }
+    #sctn4-ourCustomer{
+        font-size: 40px;
+    }
+    #review-main{
+        margin-top: 0px;
     }
 }
 @media (max-width:514px){

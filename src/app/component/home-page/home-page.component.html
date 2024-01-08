@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Poppins:wght@700&display=swap" rel="stylesheet">  
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+<!-- Animation link -->
 
 <body class="bg-orange-200 w-screen h-auto overflow-x-hidden">
 <div class=".container flex flex-col gap-12 md:mt-[-80px] sm:mt-[-80px] lg:mt-5 mt-[-80px]">
@@ -53,7 +54,9 @@
     <div id="section2" class="mt-5 flex flex-row  gap-24 section2">
 
     <div id="" class="flex flex-col pl-24 ">
-        <div id="section2-1" class="flex flex-row gap-6  ">
+      <div class="flex flex-col" data-aos="fade-down" data-aos-duration="3000">
+
+        <div id="section2-1" class="flex flex-row gap-6  " data-aos="fade-down" data-aos-duration="2000">
             <p id="section2-fast" class="fast text-[180px] font-extrabold text-orange-500">Fast</p>
             <div class="food flex flex-col">
              <p id="section2-food" class="text-[80px]  ">Food</p>
@@ -61,11 +64,12 @@
             </div>
         </div>
          <p  class=" text-3xl w-[800px] text-zinc-500 section-2-para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
 
         <div id="sctn2-videoplay" class="pt-14 flex gap-16">
             <button id="sctn2-order" class="w-[200px] h-[80px] bg-black text-white rounded-full text-2xl font-bold">order now</button>
             <ul id="video-ul"  class="flex items-center gap-5">
-                <button id="sctn2-play" class=" w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center animate-bounce sm:animate-none hover:animate-none "><svg id="play-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 ">
+                <button id="sctn2-play" class=" w-[80px] h-[80px] bg-white rounded-full flex items-center justify-center lg:animate-bounce md:animate-bounce sm:animate-none hover:animate-none "><svg id="play-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 ">
                     <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
                   </svg>           
                   </button>
@@ -114,8 +118,8 @@
     <div id="section3" class="flex flex-col items-center gap-16">
 
       <div id="sctn3-1" class="flex flex-row gap-20 ">
-       <img id="sctn3-img" class="w-[700px] h-auto" src="../../../assets/slack-imgs.png" alt="">
-        <div  class="sctn3-Aboutus   flex flex-col justify-center sm:items-center items-center gap-10">
+       <img id="sctn3-img" class="w-[700px] h-auto" src="../../../assets/slack-imgs.png" alt="" data-aos="fade-right" data-aos-duration="3000">
+        <div  class="sctn3-Aboutus   flex flex-col justify-center sm:items-center items-center gap-10" data-aos="fade-up" data-aos-duration="3000">
           <p id="sctn3-about" class="text-7xl       about">About us</p>
           <p id="sctn3-para" class="w-[700px] text-3xl font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam tenetur sed molestiae odit! Suscipit, fuga, recusandae quia itaque, cum quasi minus aliquam in et illum exercitationem quaerat ad expedita.</p>
           <button id="sctn3-btn" class="w-[150px] h-[70px] bg-orange-400 text-white rounded-md font-bold text-xl">Read more</button>
@@ -135,8 +139,8 @@
   </section>
 
   <section id="section-3" class="pt-10">
-    <div id="sctn3-main"  class="flex flex-col items-center">
-      <div id="sctn3-nav" class="flex flex-row gap-6" >
+    <div id="sctn3-main"  class="flex flex-col items-center" >
+      <div id="sctn3-nav" class="flex flex-row gap-6" data-aos="zoom-out" data-aos-duration="3000">
         <button id="sctn3-burger" class="w-[230px] h-[70px] rounded-full border-[2px] border-orange-400 flex items-center  justify-start gap-5 pl-3 text-2xl font-bold text-black hover:text-white hover:bg-orange-400  hover:shadow-gray-600 hover:shadow-lg">
           <i id="sctn3-i" class="w-14 h-14 rounded-full bg-orange-400 flex items-center justify-center"><img  class="sctn3-img w-9 h-9" src="../../../assets/burger.png" alt=""></i>
           Burger
@@ -290,8 +294,8 @@
        <!-- COUSTOMER'S SAYS  -->
 
   <section>
-    <div class="flex flex-col items-center ">
-      <p id="sctn4-ourCustomer" class="text-7xl">Our Customer's Says</p>
+    <div class="flex flex-col items-center  ">
+      <p id="sctn4-ourCustomer" class="text-lg">Our Customer's Says</p>
      <div id="review-main" class="lg:flex lg:flex-row gap-24 hidden sm:hidden lg:block md:hidden ">
 
       <div id="sctn4-customers-review" class="flex flex-col w-[450px] h-[500px] bg-white items-center justify-between mt-24 ">
@@ -347,7 +351,7 @@
     </div>
 
     <!-- carousel -->
-    <div class="min-h-screen p-3 relative lg:hidden">
+    <div class="min-h-screen p-3 relative lg:hidden mt-[-80px] md:-[-50px] lg-[-20px]">
       <div class="w-96  mx-auto" style="scroll-snap-type: x mandatory;">
          <!-- first -->
          <div class="">
@@ -452,13 +456,36 @@
  
   </section>
 
-  <section class="mt-12">
+  <section class="mt-[-80px] lg:mt-12">
     <div>
      
       <div class="flex justify-center flex-col items-center gap-10">
-        <p class="sctn5-getinTouch text-6xl font-semibold">Get in Touch with Us</p>
-        <p class=" text-2xl w-[1000px] text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        <p class="sctn5-getinTouch text-4xl md:text-5xl lg:text-6xl font-semibold">Get in Touch with Us</p>
+        <p class=" text-xl w-[500px] md:text-2xl md:w-[700px] lg:text-3xl lg:w-[1000px] text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident</p>
+      </div>
+    </div>
+    <div class="flex justify-center mt-16">
+      <div data-aos="zoom-in" class="flex flex-col w-[400px] h-[500px] border-orange-300 border-[2px] justify-center items-center gap-6">
+        <ul>
+          <p>Name</p>
+          <input class="w-[250px] h-[40px] bg-orange-200 border-orange-300 border-[2px]" type="text" placeholder="Enter name">
+        </ul>
+        <ul>
+          <p>
+            Email
+          </p>
+          <input  class="w-[250px] h-[40px] bg-orange-200 border-orange-300 border-[2px]" type="text" placeholder="Enter Email">
+        </ul>
+        <ul>
+          <p>Subject</p>
+          <input  class="w-[250px] h-[40px] bg-orange-200 border-orange-300 border-[2px]" type="text" placeholder="subject">
+        </ul>
+        <ul>
+          <p>messege</p>
+          <input  class="w-[250px] h-[40px] bg-orange-200 border-orange-300 border-[2px]" type="text" placeholder="messege">
+        </ul>
+        <button class="text-white font-semibold w-[150px] h-[50px] bg-orange-400 rounded-md">Submit</button>
       </div>
     </div>
   </section>
@@ -468,3 +495,5 @@
 
 </body>
 </html>
+
+
